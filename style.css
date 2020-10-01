@@ -2,11 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-body {
   font-family: "Quicksand", sans-serif;
 }
-
 .app {
   height: 100vh;
   display: flex;
@@ -26,15 +23,23 @@ body {
 .player-container {
   position: relative;
 }
+.player-container {
+  position: relative;
+}
+.replay {
+  position: absolute;
+}
+.replay {
+  top: 530px;
+}
 .player-container svg {
   position: absolute;
   height: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(-90deg);
   pointer-events: none;
 }
-
 .time-display {
   position: absolute;
   bottom: 10%;
@@ -56,6 +61,10 @@ video {
   background: none;
   border: 2px solid white;
   border-radius: 5px;
+  cursor: pointer;
+}
+.sound-picker button:focus {
+  outline: none;
 }
 .time-select button:hover {
   color: black;
